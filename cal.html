@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>calculator</title>
+    </head>
+    <body><center>
+       <label>enter a value</label>
+        <input type="text" id="honey"></input>
+        </br>
+        <label>enter a value</label>
+        <input type="text" id="fruity"></input>
+        </br>
+         <button onClick ="cal('+')">+</button>
+         <button  onClick ="cal('-')">-</button>
+         <button onClick ="cal('*')">*</button>
+         <button onClick ="cal('/')">/</button>
+        </br>
+        
+    <label>result :</label>
+     <div 
+     id="mom">
+    </div>
+        <script language="javascript">
+          function cal(oprtr){
+            var a=parseInt(document.getElementById("honey").value);
+    var b=parseInt(document.getElementById("fruity").value);
+    var c=document.getElementById("mom")
+    if(oprtr=="+")
+    {
+        c.innerHTML=a+b;
+    }
+    else if(oprtr=="-")
+    {
+        c.innerHTML=a-b
+    }
+    else if(oprtr=="*")
+    {
+        c.innerHTML=(a*b)
+    }
+    else if(oprtr=="/")
+    {
+        c.innerHTML=(a/b)
+    }
+}
+ </script></center>
+    </body>
+</html>
+        
